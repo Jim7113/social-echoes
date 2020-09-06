@@ -14,11 +14,11 @@ function App() {
         <Route path="/home">
           <Body />
         </Route>
+        <Route path="/posts/:postId">
+          <DetailedPost />
+        </Route>
         <Route exact path="/">
           <Body />
-        </Route>
-        <Route exact path="/posts/:postId">
-          <DetailedPost />
         </Route>
         <Route path="*">
           <NotFound />
